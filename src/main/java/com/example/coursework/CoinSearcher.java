@@ -139,7 +139,7 @@ public class CoinSearcher {
 
 
 
-        getInfoAboutCountry("Germany");
+        getInfoAboutCountry("Russia");
 
 
 

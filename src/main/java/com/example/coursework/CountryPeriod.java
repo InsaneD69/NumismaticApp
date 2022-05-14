@@ -22,6 +22,8 @@ public class CountryPeriod { // содержит в себе информаци�
     private Set<String> nominalValues;
     private Document periodTablePage; //html код странцы с таблицей всех номиналов и годов периода
 
+    private ArrayList<liteCoin> listOnePeriodCountry;
+
     public Set<String> getCurrencies() {
         return currencies;
     }
@@ -57,6 +59,16 @@ public class CountryPeriod { // содержит в себе информаци�
        });
 
 
+        InformationAboutCoinsInOnePeriod informationAboutCoinsInOnePeriod = new InformationAboutCoinsInOnePeriod(periodTablePage);
+
+        listOnePeriodCountry=informationAboutCoinsInOnePeriod.getListOnePeriodCountry();
+
+
+        listOnePeriodCountry.forEach((liteCoin liteCoin)->{
+
+            System.out.println(liteCoin.toString());
+        });
+
 
     }
 
@@ -72,14 +84,8 @@ public class CountryPeriod { // содержит в себе информаци�
         this.bgYear=Short.parseShort(intervals[0]);
         this.endYear=Short.parseShort(intervals[1]);
 
-
-
-
-
-
-
-
     }
+
 
     public boolean compareData(int year){ // дает ответ на вопрос: принадлежит ли входящий год к этому периоду
 
@@ -88,13 +94,6 @@ public class CountryPeriod { // содержит в себе информаци�
         } else return false;
 
     }
-
-
-
-
-
-
-
 
     public String getLink() {
         return link;
