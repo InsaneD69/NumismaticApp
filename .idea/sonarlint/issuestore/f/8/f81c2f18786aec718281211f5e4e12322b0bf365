@@ -1,0 +1,10 @@
+
+]	java:S125"<This block of commented-out lines of code should be removed.(‘Ñ¤’üÿÿÿÿ8Şæˆ¼…0
+X	java:S125)"<This block of commented-out lines of code should be removed.(œË÷Ä8ãæˆ¼…0
+o	java:S100?"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ˜Î¹úÿÿÿÿ8íæˆ¼…0
+X	java:S125D"<This block of commented-out lines of code should be removed.(’Çİ£8ïæˆ¼…0
+R
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ8ğæˆ¼…0
+Q
+java:S1128
+"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8ğæˆ¼…0
